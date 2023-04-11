@@ -1,0 +1,24 @@
+{
+  "name": "keyboard-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss:css",
+    "minify": "sass -w scss:css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tjardo18/Keyboard-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tjardo18/Keyboard-Project/issues"
+  },
+  "homepage": "https://github.com/Tjardo18/Keyboard-Project#readme",
+  "devDependencies": {
+    "sass": "^1.61.0"
+  }
+}
