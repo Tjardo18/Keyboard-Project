@@ -1,9 +1,40 @@
+@font-face {
+  font-family: thiccboi;
+  src: url(../../config/fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: thiccboi-bold;
+  src: url(../../config/fonts/THICCCBOI-Bold.ttf);
+}
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "thiccboi";
 }
 body nav {
+  padding: 1rem;
+}
+body nav .nav-img {
+  width: fit-content;
+  height: fit-content;
+}
+body nav ul {
+  display: inline-block;
+}
+body nav ul a {
   text-align: center;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body nav ul a:link,
+body nav ul a:visited {
+  color: #FFFFFF;
+}
+body nav ul a:hover {
+  color: #4ADE80;
 }
 
 /*# sourceMappingURL=style.css.map */
