@@ -10,31 +10,89 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: white;
+  color: #FFFFFF;
   font-family: "thiccboi";
 }
-body nav {
+body header {
+  text-align: center;
+}
+body header nav {
+  display: flex;
+  align-items: center;
   padding: 1rem;
 }
-body nav .nav-img {
+body header nav .nav-img {
   width: fit-content;
   height: fit-content;
 }
-body nav ul {
-  display: inline-block;
+body header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-body nav ul a {
-  text-align: center;
+body header nav ul li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+body header nav ul a {
   text-decoration: none;
+  font-size: 1.2em;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-body nav ul a:link,
-body nav ul a:visited {
+body header nav ul a:link, body header nav ul a:visited {
   color: #FFFFFF;
 }
-body nav ul a:hover {
+body header nav ul a:hover {
   color: #4ADE80;
+}
+body main h2 {
+  text-align: center;
+  font-size: 1.75em;
+}
+body main .container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .container .desc {
+  width: 50%;
+  font-size: 1.25rem;
+  position: relative;
+}
+body main .container .desc h3 {
+  font-size: 2.25em;
+}
+body main .container .desc span {
+  color: #20E986;
+}
+body main .container .desc .titanstrike {
+  bottom: -8rem;
+  left: 4rem;
+}
+body main .container .imgContainer {
+  width: fit-content;
+  position: relative;
+}
+body main .container .imgContainer #ProkeysKeyboard {
+  width: 600px;
+}
+body main .container .imgContainer .titanstrike {
+  bottom: 0;
+  right: 0;
+}
+body main .titanstrike {
+  margin: 0;
+  padding: 0;
+  font-family: "thiccboi-bold";
+  opacity: 0.2;
+  font-size: 6em;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */

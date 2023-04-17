@@ -5,30 +5,91 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: white;
+    color: color.get-color("white");
     font-family: 'thiccboi';
-
-    nav {
-        padding: 1rem;
-        .nav-img {
-            width: fit-content;
-            height: fit-content;
+    header {
+        text-align: center;
+        nav {
+            //align-items: center;
+            //padding: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            .nav-img {
+                width: fit-content;
+                height: fit-content;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    margin: 0 0.5rem;
+                  }
+                a {
+                    text-decoration: none;
+                    font-size: 1.2em;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+                a:link, a:visited {
+                    color: color.get-color("white");
+                }
+                a:hover {
+                    color: color.get-color("nav-green");
+                }
+            }
         }
-        ul {
-            display: inline-block;
-            a {
-                text-align: center;
-                text-decoration: none;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
+    }
+    main {
+        h2 {
+            text-align: center;
+            font-size: 1.75em;
+        }
+        .container {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .desc {
+                width: 50%;
+                font-size: 1.25rem;
+                position: relative;
+                h3 {
+                    font-size: 2.25em;
+                }
+                span {
+                    color: color.get-color("txt-green");
+                }
+                .titanstrike {
+                    bottom: -8rem;
+                    left: 4rem;
+                }
             }
-            a:link,
-            a:visited {
-                color: color.get-color("white");
+            .imgContainer {
+                width: fit-content;
+                position: relative;
+                #ProkeysKeyboard {
+                    width: 600px;
+                }
+                .titanstrike {
+                    bottom: 0;
+                    right: 0;
+                }
             }
-            a:hover {
-                color: color.get-color("nav-green");
-            }
+        }
+        .titanstrike {
+            margin: 0;
+            padding: 0;
+            font-family: 'thiccboi-bold';
+            opacity: .20;
+            font-size: 6em;
+            position: absolute;
         }
     }
 }
