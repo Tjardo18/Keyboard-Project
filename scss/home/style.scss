@@ -2,53 +2,10 @@
 @use '../config/font';
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: color.get-color("white");
-    font-family: 'thiccboi';
-    header {
-        text-align: center;
-        nav {
-            //align-items: center;
-            //padding: 1rem;
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            .nav-img {
-                width: fit-content;
-                height: fit-content;
-            }
-            ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                li {
-                    list-style: none;
-                    margin: 0 0.5rem;
-                  }
-                a {
-                    text-decoration: none;
-                    font-size: 1.2em;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                }
-                a:link, a:visited {
-                    color: color.get-color("white");
-                }
-                a:hover {
-                    color: color.get-color("nav-green");
-                }
-            }
-        }
-    }
     main {
         h2 {
             text-align: center;
-            font-size: 1.75em;
+            font-size: 2.25em;
         }
         .container {
             width: 100%;
