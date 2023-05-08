@@ -1,0 +1,55 @@
+@font-face {
+  font-family: thiccboi;
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: thiccboi-bold;
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "thiccboi";
+  background-color: #101010;
+  background-image: url("../../../../../../img/home/Background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+body header nav .nav-img {
+  width: fit-content;
+  height: fit-content;
+}
+body header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body header nav ul li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+body header nav ul a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+body header nav ul a:link, body header nav ul a:visited {
+  color: #FFFFFF;
+}
+body header nav ul a:hover {
+  color: #4ADE80;
+}
+body header nav ul a.current {
+  color: #4ADE80;
+}
+
+/*# sourceMappingURL=global.css.map */

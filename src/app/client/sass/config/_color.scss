@@ -1,0 +1,17 @@
+@use "sass:map";
+
+// Colours to be used for the website and function
+$colors: (
+  'white': #FFFFFF,
+  'background': #101010,
+  'nav-green': #4ADE80,
+  'txt-green': #20E986
+);
+
+@function get-color($color: false) {
+  @if $color {
+    @return map.get($colors, $color);
+  } @else {
+    @return $colors;
+  }
+}

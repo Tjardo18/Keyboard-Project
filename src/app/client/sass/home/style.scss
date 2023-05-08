@@ -1,0 +1,53 @@
+@use '../config/color';
+@use '../config/font';
+
+// Homepage styling
+body {
+    main {
+        h2 {
+            text-align: center;
+            font-size: 2.25em;
+        }
+        .container {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .desc {
+                width: 50%;
+                font-size: 1.25rem;
+                position: relative;
+                h3 {
+                    font-size: 2.25em;
+                }
+                span {
+                    color: color.get-color("txt-green");
+                }
+                .titanstrike {
+                    bottom: -8rem;
+                    left: 4rem;
+                }
+            }
+            .imgContainer {
+                width: fit-content;
+                position: relative;
+                #ProkeysKeyboard {
+                    width: 600px;
+                }
+                .titanstrike {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+        .titanstrike {
+            margin: 0;
+            padding: 0;
+            font-family: 'thiccboi-bold';
+            opacity: .20;
+            font-size: 6em;
+            position: absolute;
+        }
+    }
+}
