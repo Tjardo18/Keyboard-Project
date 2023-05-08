@@ -1,17 +1,17 @@
 @font-face {
   font-family: thiccboi;
-  src: url(../../config/fonts/THICCCBOI-Regular.ttf);
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
 }
 @font-face {
   font-family: thiccboi-bold;
-  src: url(../../config/fonts/THICCCBOI-Bold.ttf);
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "thiccboi";
   background-color: #101010;
-  background-image: url("../../img/home/Background.svg");
+  background-image: url("../../../../../../img/home/Background.svg");
   background-position: top right;
   background-repeat: no-repeat;
   color: #FFFFFF;

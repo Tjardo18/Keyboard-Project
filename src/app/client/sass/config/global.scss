@@ -1,12 +1,13 @@
 @use '../config/color';
 @use '../config/font';
 
+// Nav bar styling + background
 body {
     margin: 0;
     padding: 0;
     font-family: 'thiccboi';
     background-color: color.get-color('background');
-    background-image: url("../../img/home/Background.svg");
+    background-image: url("../../../../../../img/home/Background.svg");
     background-position: top right;
     background-repeat: no-repeat;
     color: color.get-color("white");

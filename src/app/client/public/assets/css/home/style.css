@@ -1,10 +1,10 @@
 @font-face {
   font-family: thiccboi;
-  src: url(../../config/fonts/THICCCBOI-Regular.ttf);
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
 }
 @font-face {
   font-family: thiccboi-bold;
-  src: url(../../config/fonts/THICCCBOI-Bold.ttf);
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
 }
 body main h2 {
   text-align: center;
