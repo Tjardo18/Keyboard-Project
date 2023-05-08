@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Prokeys</title>
+    <link rel="stylesheet" href="src/app/client/public/assets/css/config/global.css">
+    <link rel="stylesheet" href="src/app/client/public/assets/css/home/style.css">
 </head>
 <body>
-    <nav>
-        <!-- Logo -->
-        <a href="/">Home</a>
-        <a href="#">Over ons</a>
-        <a href="#">Producten</a>
-        <a href="#">Contact</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="index.html"><img src="src/img/global/Logo.svg" alt="Prokeys"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Producten</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h2>Breng jouw gaming skills naar ongekende hoogtes.</h2>
-        <div>
-            <h3>Ontdek Titanstrike Pro - De ultieme gaming kracht in jouw handen</h3>
-            <p>Optimaliseer je gameprestaties met Prokeys gaming toetsenborden.
-                Ontworpen voor snelheid, nauwkeurigheid en duurzaamheid met geavanceerde technologie en materialen.
-            </p>
+        <div class="container">
+            <div class="desc">
+                <h3>Ontdek <span>Titanstrike Pro</span> - De ultieme gaming kracht in jouw handen</h3>
+                <p>Optimaliseer je gameprestaties met Prokeys gaming toetsenborden.
+                    Ontworpen voor snelheid, nauwkeurigheid en duurzaamheid met geavanceerde technologie en materialen.
+                </p>
+                <h1 class="titanstrike">Titanstrike</h1>
+            </div>
+            <div class="imgContainer">
+                <img src="src/img/home/PROKEEYSD_.png" alt="Keyboard" id="ProkeysKeyboard">
+                <h1 class="titanstrike">Pro</h1>
+            </div>
         </div>
     </main>
-</body>
 
+    <script src="src/js/global.js"></script>
+</body>
 </html>
