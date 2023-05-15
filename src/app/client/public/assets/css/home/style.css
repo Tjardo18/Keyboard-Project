@@ -14,36 +14,36 @@ body main h2 {
   text-align: center;
   font-size: 2.25em;
 }
-body main .container {
+body main #container {
   width: 100%;
   height: fit-content;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-body main .container .desc {
+body main #container #desc {
   width: 50%;
   font-size: 1.25rem;
   position: relative;
 }
-body main .container .desc h3 {
+body main #container #desc h3 {
   font-size: 2.25em;
 }
-body main .container .desc span {
+body main #container #desc span {
   color: #20E986;
 }
-body main .container .desc .titanstrike {
+body main #container #desc .titanstrike {
   bottom: -8rem;
   left: 4rem;
 }
-body main .container .imgContainer {
+body main #container #imgContainer {
   width: fit-content;
   position: relative;
 }
-body main .container .imgContainer #ProkeysKeyboard {
+body main #container #imgContainer #ProkeysKeyboard {
   width: 600px;
 }
-body main .container .imgContainer .titanstrike {
+body main #container #imgContainer .titanstrike {
   bottom: 0;
   right: 0;
 }

@@ -1,11 +1,11 @@
 @use '../config/color';
 @use '../config/font';
 
-// Nav bar styling + background
+// Nav- & footer bar styling + background
 body {
     -ms-overflow-style: none; // Hide scrollbar IE & Edge
     scrollbar-width: none; // Hide scrollbar Firefox
-    margin: 0;
+    margin: 1rem;
     padding: 0;
     font-family: 'thiccboi';
     background-color: color.get-color('background');
@@ -14,13 +14,13 @@ body {
     background-repeat: no-repeat;
     color: color.get-color("white");
     header {
+        height: 75px;
         nav {
             display: flex;
             align-items: center;
             padding: 1rem;
             .nav-img {
-                width: fit-content;
-                height: fit-content;
+                position: absolute;
             }
             ul {
                 display: flex;
@@ -31,6 +31,8 @@ body {
                 li {
                     list-style: none;
                     margin: 0 0.5rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
                   }
                 a {
                     text-decoration: none;
@@ -45,7 +47,7 @@ body {
                     color: color.get-color("nav-green");
                 }
                 a.current {
-                    color: color.get-color("nav-green");
+                    color: color.get-color("nav-green"); // Used in global.js. Current active page user is on gets this class and color
                 }
             }
         }
@@ -55,23 +57,24 @@ body {
         justify-content: space-evenly;
         margin-top: 4rem;
 
-        .retour {
-            margin-top: 1rem;
-            margin-left: 1rem;
-            width: 75%;
-
-            h3, p {
-                margin-left: 1rem;
-            }
-
+        #retour, #contact {
             h3 {
                 font-size: 1.4em;
                 font-family: 'alfa-slab-one';
                 font-weight: normal;
             }
         }
+        #retour {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            width: 66%;
 
-        .contact {
+            h3, p {
+                margin-left: 1rem;
+            }
+        }
+
+        #contact {
             margin-top: 1rem;
             margin-right: 1rem;
             width: 33%;
@@ -79,12 +82,6 @@ body {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            
-            h3 {
-                font-size: 1.4em;
-                font-family: 'alfa-slab-one';
-                font-weight: normal;
-            }
 
             ul {
                 padding: 0;
@@ -101,7 +98,7 @@ body {
         }
     }
 }
-// Hide scrollbar chrome - Safari - Opera
+// Hide scrollbar Chrome - Safari - Opera
 body::-webkit-scrollbar {
     display: none;
 }

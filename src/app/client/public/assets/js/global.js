@@ -1,4 +1,4 @@
-// Adds the class 'current' to the active page the user is on, which then is used in CSS for styling
+// Adds the class 'current' to the active page the user is on, which then is used in CSS for styling in global.scss
 var path = window.location.pathname;
 var page = path.split("/").pop();
 console.log(page);

@@ -13,7 +13,7 @@
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin: 0;
+  margin: 1rem;
   padding: 0;
   font-family: "thiccboi";
   background-color: #101010;
@@ -22,14 +22,16 @@ body {
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
+body header {
+  height: 75px;
+}
 body header nav {
   display: flex;
   align-items: center;
   padding: 1rem;
 }
 body header nav .nav-img {
-  width: fit-content;
-  height: fit-content;
+  position: absolute;
 }
 body header nav ul {
   display: flex;
@@ -41,6 +43,8 @@ body header nav ul {
 body header nav ul li {
   list-style: none;
   margin: 0 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 body header nav ul a {
   text-decoration: none;
@@ -62,20 +66,20 @@ body footer {
   justify-content: space-evenly;
   margin-top: 4rem;
 }
-body footer .retour {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  width: 75%;
-}
-body footer .retour h3, body footer .retour p {
-  margin-left: 1rem;
-}
-body footer .retour h3 {
+body footer #retour h3, body footer #contact h3 {
   font-size: 1.4em;
   font-family: "alfa-slab-one";
   font-weight: normal;
 }
-body footer .contact {
+body footer #retour {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 66%;
+}
+body footer #retour h3, body footer #retour p {
+  margin-left: 1rem;
+}
+body footer #contact {
   margin-top: 1rem;
   margin-right: 1rem;
   width: 33%;
@@ -84,20 +88,15 @@ body footer .contact {
   align-items: center;
   flex-direction: column;
 }
-body footer .contact h3 {
-  font-size: 1.4em;
-  font-family: "alfa-slab-one";
-  font-weight: normal;
-}
-body footer .contact ul {
+body footer #contact ul {
   padding: 0;
   margin: 0;
 }
-body footer .contact ul li {
+body footer #contact ul li {
   list-style: none;
   margin: 0.5rem;
 }
-body footer .contact ul li img {
+body footer #contact ul li img {
   margin-right: 15px;
 }
 
