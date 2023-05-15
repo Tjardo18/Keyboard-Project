@@ -3,11 +3,13 @@
 
 // Nav bar styling + background
 body {
+    -ms-overflow-style: none; // Hide scrollbar IE & Edge
+    scrollbar-width: none; // Hide scrollbar Firefox
     margin: 0;
     padding: 0;
     font-family: 'thiccboi';
     background-color: color.get-color('background');
-    background-image: url("../../../../../../img/home/Background.svg");
+    background-image: url("../../../../public/assets/img/home/Background.svg");
     background-position: top right;
     background-repeat: no-repeat;
     color: color.get-color("white");
@@ -48,4 +50,58 @@ body {
             }
         }
     }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+
+        .retour {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            width: 75%;
+
+            h3, p {
+                margin-left: 1rem;
+            }
+
+            h3 {
+                font-size: 1.4em;
+                font-family: 'alfa-slab-one';
+                font-weight: normal;
+            }
+        }
+
+        .contact {
+            margin-top: 1rem;
+            margin-right: 1rem;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            h3 {
+                font-size: 1.4em;
+                font-family: 'alfa-slab-one';
+                font-weight: normal;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    margin: 0.5rem;
+
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Hide scrollbar chrome - Safari - Opera
+body::-webkit-scrollbar {
+    display: none;
 }

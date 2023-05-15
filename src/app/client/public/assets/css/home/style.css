@@ -6,6 +6,10 @@
   font-family: thiccboi-bold;
   src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
 }
+@font-face {
+  font-family: alfa-slab-one;
+  src: url(../../../../../../config/fonts/AlfaSlabOne-Regular.ttf);
+}
 body main h2 {
   text-align: center;
   font-size: 2.25em;
