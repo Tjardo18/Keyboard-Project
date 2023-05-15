@@ -1,3 +1,7 @@
+body {
+  margin: 1rem;
+}
+
 body main h2#title {
   text-align: center;
 }
@@ -28,6 +32,10 @@ body main .PimgContainer .titanstrike button#buyBtn, body main .PimgContainer .h
   border-radius: 30px;
   cursor: pointer;
   font-size: 1.75rem;
+}
+
+nav>a {
+  position: absolute;
 }
 
 /*# sourceMappingURL=producten.css.map */
