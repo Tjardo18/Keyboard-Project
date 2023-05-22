@@ -7,7 +7,14 @@
   font-weight: bold;
   src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
 }
+@font-face {
+  font-family: alfa-slab-one;
+  src: url(../../../../../../config/fonts/AlfaSlabOne-Regular.ttf);
+}
 body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 1rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin: 1rem;
@@ -15,9 +22,13 @@ body {
   font-family: "thiccboi";
   background-color: #101010;
   background-image: url("../../../../public/assets/img/home/Background.svg");
+  background-image: url("../../../../public/assets/img/home/Background.svg");
   background-position: top right;
   background-repeat: no-repeat;
   color: #FFFFFF;
+}
+body header {
+  height: 75px;
 }
 body header {
   height: 75px;
@@ -28,6 +39,7 @@ body header nav {
   padding: 1rem;
 }
 body header nav .nav-img {
+  position: absolute;
   position: absolute;
 }
 body header nav ul {
@@ -40,6 +52,8 @@ body header nav ul {
 body header nav ul li {
   list-style: none;
   margin: 0 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
   text-transform: uppercase;
   font-weight: bold;
 }

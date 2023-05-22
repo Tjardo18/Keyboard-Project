@@ -1,0 +1,48 @@
+@font-face {
+  font-family: thiccboi;
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: thiccboi-bold;
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
+}
+@font-face {
+  font-family: alfa-slab-one;
+  src: url(../../../../../../config/fonts/AlfaSlabOne-Regular.ttf);
+}
+body main h2#title {
+  text-align: center;
+}
+body main #PimgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+body main #PimgContainer #titanstrike, body main #PimgContainer #hemera, body main #PimgContainer #novastrike {
+  width: 33%;
+  text-align: center;
+  height: 100%;
+}
+body main #PimgContainer #titanstrike p.desc, body main #PimgContainer #hemera p.desc, body main #PimgContainer #novastrike p.desc {
+  min-height: 4.6rem;
+}
+body main #PimgContainer #titanstrike h2 > span, body main #PimgContainer #titanstrike p.price, body main #PimgContainer #hemera h2 > span, body main #PimgContainer #hemera p.price, body main #PimgContainer #novastrike h2 > span, body main #PimgContainer #novastrike p.price {
+  color: #20E986;
+}
+body main #PimgContainer #titanstrike p.price, body main #PimgContainer #hemera p.price, body main #PimgContainer #novastrike p.price {
+  font-size: 1.5rem;
+}
+body main #PimgContainer #titanstrike button.buyBtn, body main #PimgContainer #hemera button.buyBtn, body main #PimgContainer #novastrike button.buyBtn {
+  width: 175px;
+  height: 35px;
+  background-color: #20E986;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.75rem;
+}
+
+/*# sourceMappingURL=producten.css.map */

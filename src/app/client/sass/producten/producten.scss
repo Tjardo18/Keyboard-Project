@@ -1,0 +1,46 @@
+@use '../config/color';
+@use '../config/font';
+
+body {
+    main {
+        h2#title {
+            text-align: center;
+        }
+        #PimgContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            width: 100%;
+
+            #titanstrike, #hemera, #novastrike {
+                width: 33%;
+                text-align: center;
+                height: 100%;
+
+                p.desc {
+                    min-height: 4.6rem;
+                }
+
+                h2>span, p.price {
+                    color: color.get-color('txt-green');
+                }
+
+                p.price {
+                    font-size: 1.5rem;
+                }
+
+                button.buyBtn {
+                    width: 175px;
+                    height: 35px;
+                    background-color: color.get-color('txt-green');
+                    color: color.get-color('white');
+                    border: none;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
