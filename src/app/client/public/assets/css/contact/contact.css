@@ -1,0 +1,109 @@
+@font-face {
+  font-family: thiccboi;
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: thiccboi;
+  font-weight: bold;
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
+}
+main {
+  text-transform: uppercase;
+}
+main h2 {
+  text-align: center;
+}
+main div#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main div#container div#info, main div#container div#formcontainer {
+  align-items: center;
+}
+main div#container div#info #email-info, main div#container div#info #phone-info, main div#container div#info #location-info, main div#container div#info #form, main div#container div#info #nieuwsbrief, main div#container div#formcontainer #email-info, main div#container div#formcontainer #phone-info, main div#container div#formcontainer #location-info, main div#container div#formcontainer #form, main div#container div#formcontainer #nieuwsbrief {
+  background-color: #202020;
+}
+main div#container #info #email-info, main div#container #info #phone-info, main div#container #info #location-info, main div#container #info #form, main div#container #info #nieuwsbrief, main div#container #formcontainer #email-info, main div#container #formcontainer #phone-info, main div#container #formcontainer #location-info, main div#container #formcontainer #form, main div#container #formcontainer #nieuwsbrief {
+  flex-direction: row;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+}
+main div#container #info #email-info p, main div#container #info #phone-info p, main div#container #info #location-info p, main div#container #info #form p, main div#container #info #nieuwsbrief p, main div#container #formcontainer #email-info p, main div#container #formcontainer #phone-info p, main div#container #formcontainer #location-info p, main div#container #formcontainer #form p, main div#container #formcontainer #nieuwsbrief p {
+  font-weight: bold;
+}
+main div#container #info #email-info img, main div#container #info #phone-info img, main div#container #info #location-info img, main div#container #info #form img, main div#container #info #nieuwsbrief img, main div#container #formcontainer #email-info img, main div#container #formcontainer #phone-info img, main div#container #formcontainer #location-info img, main div#container #formcontainer #form img, main div#container #formcontainer #nieuwsbrief img {
+  width: 100px;
+}
+main div#container div#info div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+main div#container div#info p {
+  width: 50%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+main div#container div#formcontainer input, main div#container div#formcontainer textarea {
+  background-color: #303030;
+  color: #FFFFFF;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 15px;
+  font-family: "thiccboi";
+  font-weight: bold;
+}
+main div#container div#formcontainer input::placeholder, main div#container div#formcontainer textarea::placeholder {
+  text-transform: uppercase;
+}
+main div#container div#formcontainer h3 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+main div#container div#formcontainer #form {
+  width: 30rem;
+}
+main div#container div#formcontainer #form input {
+  margin: 0.3rem;
+  padding: 0.4rem;
+}
+main div#container div#formcontainer #form input#name {
+  width: 20%;
+}
+main div#container div#formcontainer #form input#subject {
+  width: 69%;
+}
+main div#container div#formcontainer #form textarea#message {
+  margin: 0.3rem;
+  width: 95%;
+  resize: none;
+}
+main div#container div#formcontainer #form input.email {
+  width: 73%;
+}
+main div#container div#formcontainer #nieuwsbrief input.email {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  width: 73%;
+}
+main div#container div#formcontainer button {
+  padding: 0.5rem;
+  background-color: #25BD72;
+  color: #FFFFFF;
+  padding: 0.3rem;
+  border-radius: 15px;
+  width: 20%;
+  border: none;
+  font-family: "thiccboi";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main div#container div#formcontainer button:hover {
+  background-color: #179355;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=contact.css.map */

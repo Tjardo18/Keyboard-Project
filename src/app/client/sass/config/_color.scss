@@ -4,8 +4,12 @@
 $colors: (
   'white': #FFFFFF,
   'background': #101010,
+  'banner-background': #202020,
+  'input-background': #303030,
   'nav-green': #4ADE80,
-  'txt-green': #20E986
+  'txt-green': #20E986,
+  'form-button': #25BD72,
+  'dark-form-button': #179355
 );
 
 @function get-color($color: false) {
