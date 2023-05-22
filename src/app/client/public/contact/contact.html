@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/config/global.css">
+    <link rel="stylesheet" href="../assets/css/contact/contact.css">
+
+    <title>Prokeys</title>
+</head>
+<body>
+    <!--nav bar-->
+    <header>
+        <nav>
+            <a href="index.html"><img src="../assets/img/global/Logo.svg" alt="Prokeys"></a>
+            <ul>
+                <!--button to homepage-->
+                <li><a href="../index.html">Home</a></li>
+                <!--button to about us page-->
+                <li><a href="#">Over ons</a></li>
+                <!--button to product page-->
+                <li><a href="../producten/producten.html">Producten</a></li>
+                <!--button to contact page-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Meer vragen? Leg contact met ons team!</h2>
+        <!--basis info verdeeld in 3 balken-->
+        <div id="container">
+            <div id="info">
+                <!--balk voor mail gegevens-->
+                <div id="email-info">
+                    <img src="../assets/img/contact/Email icon.svg" alt="">
+                    <p>Bereik ons via mail op: ProKeys@support.nl</p>
+                </div>
+                <!--balk voor telefoon gegevens-->
+                <div id="phone-info">
+                    <img src="../assets/img/contact/Phone icon.svg" alt="">
+                    <p>Bel ons via +31 6 81408150</p>
+                </div>
+                <!--balk voor locatie gegevens-->
+                <div id="location-info">
+                    <img src="../assets/img/contact/Location icon.svg" alt="">
+                    <p>Bezoek onze locatie op Daltonlaan 300, Utrecht</p>
+                </div>
+            </div>
+            <!--registratie voor vragen en nieuwsbrief-->
+            <div id="formcontainer">
+                <!--form voor het stellen van een vraag-->
+                <div id="form">
+                    <h3>Stel ons hier direct een vraag</h3>
+                    <form action="" method="POST">
+                        <input type="text" placeholder="naam" id="name" required>
+                        <input type="text" placeholder="onderwerp" id="subject" required>
+                        <textarea rows="4" cols="4" placeholder="bericht" id="message" required></textarea>
+                        <input type="email" placeholder="voer email adres in" class="email" required>
+                        <button>verstuur</button>
+                    </form>
+                </div>
+                <!--input voor het registeren van de nieuwsbrief-->
+                <div id="nieuwsbrief">
+                    <h3>Registreer voor de nieuwsbrief</h3>
+                    <form action="" method="POST">
+                        <input type="email" placeholder="voer email adres in" class="email" required>
+                        <button>verstuur</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/js/global.js"></script>
+</body>
+</html>

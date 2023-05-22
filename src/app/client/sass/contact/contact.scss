@@ -1,0 +1,111 @@
+@use '../config/font';
+@use '../config/color';
+main {
+    text-transform: uppercase;
+    h2{
+        text-align: center;
+    }
+    div#container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        div#info, div#formcontainer {//selects both info and form containers
+            align-items: center;
+            //flex-direction: column;
+            #email-info, #phone-info, #location-info, #form, #nieuwsbrief {//gives all fields a background
+                background-color: color.get-color('banner-background');
+            }
+        }
+        #info, #formcontainer {
+            #email-info, #phone-info, #location-info, #form, #nieuwsbrief {//selects all info banners
+                flex-direction: row;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 15px;
+                p {
+                    font-weight: bold;
+                }
+                img {
+                    width: 100px;
+                }
+            } 
+        }
+        div#info{
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+            p {
+                width: 50%;
+                text-align: center;
+                font-size: 1.1rem;
+            }
+        }  
+        div#formcontainer {
+            input, textarea {
+                background-color: color.get-color('input-background');
+                color: color.get-color('white');
+                padding: .3rem;
+                border: none;
+                border-radius: 15px;
+                font-family: 'thiccboi';
+                font-weight: bold;
+            }
+            input::placeholder, textarea::placeholder {
+                text-transform: uppercase;
+            }
+            h3 {
+                text-align: center;
+                font-size: 1.25rem;
+            }
+
+            #form{
+                width: 30rem;
+                input{
+                margin: .3rem;
+                padding: .4rem;
+                }
+                input#name{
+                    width: 20%;
+                }
+                input#subject{
+                    width: 69%;
+                }
+                textarea#message{
+                    margin: .3rem;
+                    width: 95%;
+                    resize: none;
+                }
+                input.email{
+                    width: 73%;
+                }
+                
+            }
+            #nieuwsbrief {
+                input.email{
+                    margin: .3rem;
+                    padding: .5rem;
+                    width: 73%;
+                }
+            }
+            button {
+                padding: .5rem;
+                background-color: color.get-color('form-button');
+                color: color.get-color('white');
+                padding: .3rem;
+                border-radius: 15px;
+                width: 20%;
+                border: none;
+                font-family: 'thiccboi';
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            button:hover{
+                background-color: color.get-color('dark-form-button');
+                cursor: pointer;
+            }
+        }
+    } 
+}
