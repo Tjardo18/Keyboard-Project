@@ -1,0 +1,30 @@
+/* Stijl voor de alinea's (p-elementen) */
+p {
+    text-align: center; 
+    margin-top: 0.5em;
+}
+
+  /* Stijl voor het ouderelement van de alinea's (main-element) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+  }
+  /*stijlt en plaatst de images op het goeie formaat*/
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 1em; 
+    margin-top: 1em; 
+  }
+  /* Zorgt ervoor dat de afbeeldingen de volledige breedte van de container innemen */
+  .image-container img {
+    width: 100%; 
+  }
+  
