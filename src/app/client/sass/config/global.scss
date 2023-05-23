@@ -47,9 +47,58 @@ body {
                     color: color.get-color("nav-green");
                 }
                 a.current {
-                    color: color.get-color("nav-green");
+                    color: color.get-color("nav-green"); // Used in global.js. Current active page user is on gets this class and color
                 }
             }
         }
     }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 4rem;
+
+        #retour, #contact {
+            h3 {
+                font-size: 1.4em;
+                font-family: 'alfa-slab-one';
+                font-weight: normal;
+            }
+        }
+        #retour {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            width: 66%;
+
+            h3, p {
+                margin-left: 1rem;
+            }
+        }
+
+        #contact {
+            margin-top: 1rem;
+            margin-right: 1rem;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    margin: 0.5rem;
+
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+// Hide scrollbar Chrome - Safari - Opera
+body::-webkit-scrollbar {
+    display: none;
 }

@@ -7,6 +7,10 @@
   font-weight: bold;
   src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
 }
+@font-face {
+  font-family: alfa-slab-one;
+  src: url(../../../../../../config/fonts/AlfaSlabOne-Regular.ttf);
+}
 main {
   text-transform: uppercase;
 }
