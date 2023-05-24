@@ -1,0 +1,81 @@
+@font-face {
+  font-family: thiccboi;
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: thiccboi;
+  font-weight: bold;
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
+}
+@font-face {
+  font-family: alfa-slab-one;
+  src: url(../../../../../../config/fonts/AlfaSlabOne-Regular.ttf);
+}
+body main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main h2#title {
+  text-align: center;
+}
+body main #PimgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+}
+body main #PimgContainer #titanstrike,
+body main #PimgContainer #hemera,
+body main #PimgContainer #novastrike {
+  width: 43%;
+  text-align: center;
+  height: 100%;
+}
+body main #PimgContainer #titanstrike h2 > span,
+body main #PimgContainer #titanstrike p.price,
+body main #PimgContainer #hemera h2 > span,
+body main #PimgContainer #hemera p.price,
+body main #PimgContainer #novastrike h2 > span,
+body main #PimgContainer #novastrike p.price {
+  color: #20E986;
+}
+body main #PimgContainer #titanstrike p.price,
+body main #PimgContainer #hemera p.price,
+body main #PimgContainer #novastrike p.price {
+  font-size: 1.5rem;
+}
+body main #PimgContainer #stats {
+  background-color: #303030;
+  padding: 0 15px 15px 15px;
+  border-radius: 12px;
+}
+body main #PimgContainer #stats h3 {
+  text-align: center;
+  margin-bottom: 3px;
+}
+body main #PimgContainer #stats .bar {
+  width: 500px;
+  height: 10px;
+  background-color: #d9d9d9;
+  border-radius: 12px;
+}
+body main #PimgContainer #stats .bar .innerBar {
+  height: 10px;
+  background-color: #20e986;
+  border-radius: 12px;
+  animation: loading 1.75s forwards;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+    border-radius: 12px;
+  }
+  100% {
+    border-radius: 12px;
+  }
+}
+
+/*# sourceMappingURL=vergelijking.css.map */
