@@ -86,14 +86,15 @@ main div#container div#formcontainer #form textarea#message {
   resize: none;
 }
 main div#container div#formcontainer #form input.email {
-  width: 73%;
+  width: 72%;
 }
 main div#container div#formcontainer #nieuwsbrief input.email {
   margin: 0.3rem;
   padding: 0.5rem;
   width: 73%;
 }
-main div#container div#formcontainer button {
+main div#container div#formcontainer input[type=submit] {
+  display: inline;
   padding: 0.5rem;
   background-color: #25BD72;
   color: #FFFFFF;
@@ -105,7 +106,7 @@ main div#container div#formcontainer button {
   font-weight: bold;
   text-transform: uppercase;
 }
-main div#container div#formcontainer button:hover {
+main div#container div#formcontainer input[type=submit]:hover {
   background-color: #179355;
   cursor: pointer;
 }

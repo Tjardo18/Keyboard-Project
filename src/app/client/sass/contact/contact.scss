@@ -79,7 +79,7 @@ main {
                     resize: none;
                 }
                 input.email{
-                    width: 73%;
+                    width: 72%;
                 }
                 
             }
@@ -90,7 +90,8 @@ main {
                     width: 73%;
                 }
             }
-            button {
+            input[type=submit] {
+                display: inline;
                 padding: .5rem;
                 background-color: color.get-color('form-button');
                 color: color.get-color('white');
@@ -102,7 +103,7 @@ main {
                 font-weight: bold;
                 text-transform: uppercase;
             }
-            button:hover{
+            input[type=submit]:hover{
                 background-color: color.get-color('dark-form-button');
                 cursor: pointer;
             }
