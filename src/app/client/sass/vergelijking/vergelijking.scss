@@ -1,0 +1,75 @@
+@use '../config/color';
+@use '../config/font';
+
+body {
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h2#title {
+            text-align: center;
+        }
+
+        #PimgContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+
+            #titanstrike,
+            #hemera,
+            #novastrike {
+                width: 43%;
+                text-align: center;
+                height: 100%;
+
+                h2>span,
+                p.price {
+                    color: color.get-color('txt-green');
+                }
+
+                p.price {
+                    font-size: 1.5rem;
+                }
+            }
+
+            #stats {
+                background-color: color.get-color('input-background');
+                padding: 0 15px 15px 15px;
+                border-radius: 12px;
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 3px;
+                }
+
+                .bar {
+                    width: 500px;
+                    height: 10px;
+                    background-color: #d9d9d9;
+                    border-radius: 12px;
+
+                    .innerBar {
+                        height: 10px;
+                        background-color: #20e986;
+                        border-radius: 12px;
+                        animation: loading 1.75s forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+        border-radius: 12px;
+    }
+
+    100% {
+        border-radius: 12px;
+    }
+}
