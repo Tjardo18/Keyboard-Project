@@ -45,5 +45,8 @@ body main #PimgContainer #titanstrike button.buyBtn, body main #PimgContainer #h
   cursor: pointer;
   font-size: 1.75rem;
 }
+body main #PimgContainer #titanstrike button:hover, body main #PimgContainer #hemera button:hover, body main #PimgContainer #novastrike button:hover {
+  background-color: #179355;
+}
 
 /*# sourceMappingURL=producten.css.map */
