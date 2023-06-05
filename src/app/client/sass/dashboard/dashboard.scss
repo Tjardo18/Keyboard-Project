@@ -1,0 +1,40 @@
+@use '../config/font';
+@use '../config/color';
+
+#container { // Centers everything in container to center
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    form { // Allows submit btn to get centered below textarea
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        textarea { // Specific styling textarea
+            resize: none;
+            background-color: color.get-color('input-background');
+            color: color.get-color('white');
+            font-family: 'thiccboi';
+            font-size: 1rem;
+            border-radius: 15px;
+            padding: 10px 10px;
+        }
+    
+        input[type=submit] { // Submit button styling
+            background-color: color.get-color('form-button');
+            color: color.get-color('white');
+            font-weight: bold;
+            border-radius: 15px;
+            border: none;
+            width: 5rem;
+            padding: 0.4rem;
+            margin-top: 1rem;
+        }
+
+        input[type=submit]:hover { // Submit button on hover styling
+            cursor: pointer;
+            background-color: color.get-color('dark-form-button');
+        }
+    }
+}

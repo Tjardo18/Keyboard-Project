@@ -1,0 +1,49 @@
+@font-face {
+  font-family: thiccboi;
+  src: url(../../../../../../config/fonts/THICCCBOI-Regular.ttf);
+}
+@font-face {
+  font-family: thiccboi;
+  font-weight: bold;
+  src: url(../../../../../../config/fonts/THICCCBOI-Bold.ttf);
+}
+@font-face {
+  font-family: alfa-slab-one;
+  src: url(../../../../../../config/fonts/AlfaSlabOne-Regular.ttf);
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#container form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#container form textarea {
+  resize: none;
+  background-color: #303030;
+  color: #FFFFFF;
+  font-family: "thiccboi";
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+#container form input[type=submit] {
+  background-color: #25BD72;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  width: 5rem;
+  padding: 0.4rem;
+  margin-top: 1rem;
+}
+#container form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #179355;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
